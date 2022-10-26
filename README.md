@@ -1,6 +1,6 @@
 # ncep-weather-geoserver
 
-![poc screenshot](img/poc-screenshot.png =400x)
+![poc screenshot](img/poc-screenshot.png)
 
 Initial notes:
 - Check Geoserver at port 8080 (username GEOSERVER_ADMIN_USER with password geoserver)
