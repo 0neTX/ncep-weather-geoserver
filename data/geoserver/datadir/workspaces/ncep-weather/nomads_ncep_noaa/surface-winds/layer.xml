@@ -1,0 +1,17 @@
+<layer>
+  <name>surface-winds</name>
+  <id>LayerInfoImpl--1c84a464:1819da60027:-56c4</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--7c28748b:17fe0f6c456:-7afb</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--1c84a464:1819da60027:-56c5</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <defaultWMSInterpolationMethod>Nearest</defaultWMSInterpolationMethod>
+  <dateModified>2022-10-26 15:51:50.390 UTC</dateModified>
+</layer>

@@ -1,0 +1,15 @@
+<layer>
+  <name>cloud-coverage</name>
+  <id>LayerInfoImpl--1c84a464:1819da60027:-56ca</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--7c28748b:17fe0f6c456:-7afe</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--1c84a464:1819da60027:-56cb</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

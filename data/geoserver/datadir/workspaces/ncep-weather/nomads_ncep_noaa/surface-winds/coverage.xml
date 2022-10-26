@@ -1,0 +1,228 @@
+<coverage>
+  <id>CoverageInfoImpl--1c84a464:1819da60027:-56c5</id>
+  <name>surface-winds</name>
+  <nativeName>viento_de_superficie</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--7c28748b:17fe0f6c456:-7ff9</id>
+  </namespace>
+  <title>surface-winds</title>
+  <description>Generated from ImageMosaic</description>
+  <nativeCRS>GEOGCS[&quot;WGS 84&quot;, 
+  DATUM[&quot;World Geodetic System 1984&quot;, 
+    SPHEROID[&quot;WGS 84&quot;, 6378137.0, 298.257223563, AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</nativeCRS>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>259.875</minx>
+    <maxx>300.125</maxx>
+    <miny>14.875</miny>
+    <maxy>34.125</maxy>
+    <crs>EPSG:4326</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>259.875</minx>
+    <maxx>300.125</maxx>
+    <miny>14.875</miny>
+    <maxy>34.125</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>REPROJECT_TO_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="elevation">
+      <dimensionInfo>
+        <enabled>false</enabled>
+      </dimensionInfo>
+    </entry>
+    <entry key="COVERAGE_VIEW">
+      <coverageView>
+        <coverageBands>
+          <coverageBand>
+            <inputCoverageBands class="singleton-list">
+              <inputCoverageBand>
+                <coverageName>u-component_of_wind_height_above_ground</coverageName>
+              </inputCoverageBand>
+            </inputCoverageBands>
+            <definition>u-component_of_wind_height_above_ground</definition>
+            <index>0</index>
+            <compositionType>BAND_SELECT</compositionType>
+          </coverageBand>
+          <coverageBand>
+            <inputCoverageBands class="singleton-list">
+              <inputCoverageBand>
+                <coverageName>v-component_of_wind_height_above_ground</coverageName>
+              </inputCoverageBand>
+            </inputCoverageBands>
+            <definition>v-component_of_wind_height_above_ground</definition>
+            <index>1</index>
+            <compositionType>BAND_SELECT</compositionType>
+          </coverageBand>
+        </coverageBands>
+        <name>viento_de_superficie</name>
+        <envelopeCompositionType>INTERSECTION</envelopeCompositionType>
+        <selectedResolution>BEST</selectedResolution>
+        <selectedResolutionIndex>-1</selectedResolutionIndex>
+      </coverageView>
+    </entry>
+    <entry key="time">
+      <dimensionInfo>
+        <enabled>true</enabled>
+        <presentation>LIST</presentation>
+        <units>ISO8601</units>
+        <defaultValue>
+          <strategy>MINIMUM</strategy>
+        </defaultValue>
+        <nearestMatchEnabled>true</nearestMatchEnabled>
+        <acceptableInterval>PT3M/PT0H</acceptableInterval>
+      </dimensionInfo>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+    <entry key="NetCDFOutput.Key">
+      <netcdfLayerSettingsContainer>
+        <compressionLevel>0</compressionLevel>
+        <shuffle>true</shuffle>
+        <copyAttributes>false</copyAttributes>
+        <copyGlobalAttributes>false</copyGlobalAttributes>
+        <dataPacking>NONE</dataPacking>
+      </netcdfLayerSettingsContainer>
+    </entry>
+    <entry key="dirName">nomads_ncep_noaa_viento_de_superficie</entry>
+  </metadata>
+  <store class="coverageStore">
+    <id>CoverageStoreInfoImpl--1c84a464:1819da60027:-608a</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <nativeFormat>ImageMosaic</nativeFormat>
+  <grid dimension="2">
+    <range>
+      <low>0 0</low>
+      <high>285 281</high>
+    </range>
+    <transform>
+      <scaleX>0.25</scaleX>
+      <scaleY>-0.25</scaleY>
+      <shearX>0.0</shearX>
+      <shearY>0.0</shearY>
+      <translateX>280.0</translateX>
+      <translateY>-20.0</translateY>
+    </transform>
+    <crs>EPSG:4326</crs>
+  </grid>
+  <supportedFormats>
+    <string>GEOTIFF</string>
+    <string>GIF</string>
+    <string>PNG</string>
+    <string>JPEG</string>
+    <string>TIFF</string>
+  </supportedFormats>
+  <interpolationMethods>
+    <string>nearest neighbor</string>
+    <string>bilinear</string>
+    <string>bicubic</string>
+  </interpolationMethods>
+  <defaultInterpolationMethod>nearest neighbor</defaultInterpolationMethod>
+  <dimensions>
+    <coverageDimension>
+      <name>u-component_of_wind_height_above_ground</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <dimensionType>
+        <name>REAL_32BITS</name>
+      </dimensionType>
+    </coverageDimension>
+    <coverageDimension>
+      <name>v-component_of_wind_height_above_ground</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <dimensionType>
+        <name>REAL_32BITS</name>
+      </dimensionType>
+    </coverageDimension>
+  </dimensions>
+  <requestSRS>
+    <string>EPSG:4326</string>
+  </requestSRS>
+  <responseSRS>
+    <string>EPSG:4326</string>
+  </responseSRS>
+  <parameters>
+    <entry>
+      <string>BackgroundValues</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>OVERVIEW_POLICY</string>
+      <string>QUALITY</string>
+    </entry>
+    <entry>
+      <string>MergeBehavior</string>
+      <string>FLAT</string>
+    </entry>
+    <entry>
+      <string>AllowMultithreading</string>
+      <boolean>false</boolean>
+    </entry>
+    <entry>
+      <string>MaxAllowedTiles</string>
+      <int>-1</int>
+    </entry>
+    <entry>
+      <string>ExcessGranuleRemoval</string>
+      <string>NONE</string>
+    </entry>
+    <entry>
+      <string>OutputTransparentColor</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>USE_JAI_IMAGEREAD</string>
+      <boolean>true</boolean>
+    </entry>
+    <entry>
+      <string>Bands</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>RescalePixels</string>
+      <boolean>true</boolean>
+    </entry>
+    <entry>
+      <string>Filter</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>InputTransparentColor</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>SUGGESTED_TILE_SIZE</string>
+      <string>512,512</string>
+    </entry>
+    <entry>
+      <string>Accurate resolution computation</string>
+      <boolean>false</boolean>
+    </entry>
+    <entry>
+      <string>SORTING</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>FootprintBehavior</string>
+      <string>None</string>
+    </entry>
+  </parameters>
+  <nativeCoverageName>viento_de_superficie</nativeCoverageName>
+</coverage>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Indexer>
+    <coverages>
+        <coverage>
+            <name>Total_cloud_cover_entire_atmosphere</name>
+        </coverage>
+        <coverage>
+            <name>Direction_of_wind_waves_surface</name>
+        </coverage>
+        <coverage>
+            <name>Temperature_isobaric</name>
+        </coverage>
+        <coverage>
+            <name>Temperature_surface</name>
+        </coverage>
+        <coverage>
+            <name>Mean_period_of_wind_waves_surface</name>
+        </coverage>
+        <coverage>
+            <name>v-component_of_wind_isobaric</name>
+        </coverage>
+        <coverage>
+            <name>Pressure_reduced_to_MSL_msl</name>
+        </coverage>
+        <coverage>
+            <name>Total_cloud_cover_isobaric</name>
+        </coverage>
+        <coverage>
+            <name>u-component_of_wind_height_above_ground</name>
+        </coverage>
+        <coverage>
+            <name>v-component_of_wind_height_above_ground</name>
+        </coverage>
+        <coverage>
+            <name>Geopotential_height_surface</name>
+        </coverage>
+        <coverage>
+            <name>u-component_of_wind_isobaric</name>
+        </coverage>
+        <coverage>
+            <name>Wind_speed_gust_surface</name>
+        </coverage>
+        <coverage>
+            <name>Geopotential_height_isobaric</name>
+        </coverage>
+        <coverage>
+            <name>Significant_height_of_combined_wind_waves_and_swell_surface</name>
+        </coverage>
+    </coverages>
+    <parameters>
+        <parameter name="uniqueTimeAttribute" value="true"/>
+    </parameters>
+</Indexer> 

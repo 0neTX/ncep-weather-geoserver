@@ -1,0 +1,16 @@
+<layer>
+  <name>atmospheric-pressure</name>
+  <id>LayerInfoImpl--1c84a464:1819da60027:-56c7</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-65789f0e:180c34236fc:-7fbf</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--1c84a464:1819da60027:-56c8</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateModified>2022-10-26 15:51:36.348 UTC</dateModified>
+</layer>

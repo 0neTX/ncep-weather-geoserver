@@ -1,0 +1,15 @@
+<layer>
+  <name>waves-height</name>
+  <id>LayerInfoImpl--48103ab6:1840c2ef811:-7bd5</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--48103ab6:1840c2ef811:-7bd4</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--48103ab6:1840c2ef811:-7bd6</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

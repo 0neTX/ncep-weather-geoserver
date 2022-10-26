@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Indexer>
+<domains>
+        <domain name="time">
+            <attributes>
+                <attribute>time</attribute>
+            </attributes>
+        </domain>
+    </domains>
+<schemas>
+	<schema name="default">
+             <attributes>the_geom:Polygon,location:String,imageindex:Integer,time:java.util.Date</attributes>
+        </schema>
+	<schema name="default_plus_height_above_ground">
+	     <attributes>the_geom:Polygon,location:String,imageindex:Integer,time:java.util.Date,height_above_ground:java.lang.Float</attributes>
+        </schema>
+	<schema name="default_plus_isobaric">
+	      <attributes>the_geom:Polygon,location:String,imageindex:Integer,time:java.util.Date,isobaric:java.lang.Float</attributes>
+        </schema>
+</schemas>
+    <coverages>
+	<coverage>
+            <name>Total_cloud_cover_entire_atmosphere</name>
+	    <schema ref="default" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>Direction_of_wind_waves_surface</name>
+	    <schema ref="default" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>Temperature_isobaric</name>
+	    <schema ref="default_plus_isobaric" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>Temperature_surface</name>
+	    <schema ref="default" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+	<coverage>
+            <name>Mean_period_of_wind_waves_surface</name>
+	    <schema ref="default" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>Geopotential_height_surface</name>
+	    <schema ref="default" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>u-component_of_wind_isobaric</name>
+	    <schema ref="default_plus_isobaric" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>v-component_of_wind_isobaric</name>
+	    <schema ref="default_plus_isobaric" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>Pressure_reduced_to_MSL_msl</name>
+	    <schema ref="default" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>Total_cloud_cover_isobaric</name>
+	    <schema ref="default_plus_isobaric" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>u-component_of_wind_height_above_ground</name>
+	    <schema ref="default_plus_height_above_ground" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>v-component_of_wind_height_above_ground</name>
+	    <schema ref="default_plus_height_above_ground" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>Wind_speed_gust_surface</name>
+	    <schema ref="default" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+        <coverage>
+            <name>Geopotential_height_isobaric</name>
+	    <schema ref="default_plus_isobaric" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+	<coverage>
+            <name>Significant_height_of_combined_wind_waves_and_swell_surface</name>
+	    <schema ref="default" />
+	    <domains>
+               	<domain ref="time"/>
+	    </domains>
+        </coverage>
+    </coverages>
+    <parameters>
+        <parameter name="AuxiliaryFile" value="_auxiliary.xml"/>
+        <parameter name="AbsolutePath" value="true"/>
+    </parameters>
+</Indexer>

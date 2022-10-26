@@ -1,0 +1,15 @@
+<layer>
+  <name>wind-gust</name>
+  <id>LayerInfoImpl--48103ab6:1840c2ef811:-7bdc</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--48103ab6:1840c2ef811:-7bdb</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--48103ab6:1840c2ef811:-7bdd</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

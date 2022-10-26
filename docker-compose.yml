@@ -1,0 +1,53 @@
+version: '3'
+services:
+  geoserver:
+    image: 'geotekne/geoserver:lime-buster-2.20.4'
+    hostname: geoserver
+    environment:
+      - STABLE_EXTENSIONS=grib-plugin,netcdf-plugin,netcdf-out-plugin
+      - GEOSERVER_DATA_DIR=/var/local/geoserver
+      - JAVA_OPTS=-DNETCDF_DATA_DIR=/tmp
+    volumes:
+      - './data/geoserver/datadir:/var/local/geoserver'
+    restart: on-failure
+    ports:
+      - '8080:8080'
+
+  wmsclient:
+    image: 'nginx:1.21.3-alpine'
+    hostname: wmsclient
+    volumes:
+      - './data/nginx/html:/usr/share/nginx/html'
+    ports:
+      - "80:80"
+    restart: on-failure
+
+  weatherdb:
+    image: 'kartoza/postgis:12.1'
+    hostname: weatherdb
+    env_file:
+      - ./postgis.env
+    volumes:
+      - 'pgdata:/var/lib/postgresql'
+    expose:
+      - '5432'
+    restart: on-failure
+
+  pgadmin:
+    image: 'dpage/pgadmin4'
+    environment:
+      - PGADMIN_LISTEN_PORT=80
+      - PGADMIN_DEFAULT_EMAIL=admin@geotekne.com.ar
+      - PGADMIN_DEFAULT_PASSWORD=geotekne
+    ports:
+      - "81:80"
+    depends_on:
+      - postgis
+    volumes:
+      - './conf/pgadmin/servers.json:/pgadmin4/servers.json'
+    restart: always
+
+  # TODO: Add ncep-weather-worker and extended-crontab-ui
+
+volumes: 
+     pgdata:
