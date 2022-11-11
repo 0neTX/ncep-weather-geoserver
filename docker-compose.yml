@@ -3,6 +3,7 @@ services:
   geoserver:
     image: 'geotekne/geoserver:lime-buster-2.20.4'
     hostname: geoserver
+    user: root
     environment:
       - STABLE_EXTENSIONS=grib-plugin,netcdf-plugin,netcdf-out-plugin
       - GEOSERVER_DATA_DIR=/var/local/geoserver
