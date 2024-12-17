@@ -61,16 +61,16 @@ services:
     networks:
       - geoserver-net
 
-  ncep-weather-worker:
-      volumes:
-          - ./data/nomads_ncep_noaa:/tmp/datastore
-          - ./conf/ncep-weather-worker/config.sh:/scripts/config.sh
-      container_name: ncep-weather-worker
-      image: 0netx/ncep-weather-worker:1.0.3      
-      build:
-        context: .
-        dockerfile: Dockerfile
-      env_file: "worker.env"
+  # ncep-weather-worker:
+  #     volumes:
+  #         - ./data/nomads_ncep_noaa:/tmp/datastore
+  #         - ./conf/ncep-weather-worker/config.sh:/scripts/config.sh
+  #     container_name: ncep-weather-worker
+  #     image: 0netx/ncep-weather-worker:1.0.3      
+  #     build:
+  #       context: .
+  #       dockerfile: Dockerfile
+  #     env_file: "worker.env"
   
 
   # TODO: Add ncep-weather-worker and extended-crontab-ui
