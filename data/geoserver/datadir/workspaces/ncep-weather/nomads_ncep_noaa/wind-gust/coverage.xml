@@ -39,6 +39,12 @@
         <enabled>false</enabled>
       </dimensionInfo>
     </entry>
+    <entry key="DirectDownload.Key">
+      <directDownloadSettings>
+        <directDownloadEnabled>false</directDownloadEnabled>
+        <maxDownloadSize>0</maxDownloadSize>
+      </directDownloadSettings>
+    </entry>
     <entry key="time">
       <dimensionInfo>
         <enabled>true</enabled>

@@ -18,17 +18,17 @@
   AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</nativeCRS>
   <srs>EPSG:4326</srs>
   <nativeBoundingBox>
-    <minx>259.875</minx>
-    <maxx>300.125</maxx>
-    <miny>14.875</miny>
-    <maxy>34.125</maxy>
+    <minx>-0.125</minx>
+    <maxx>359.875</maxx>
+    <miny>-90.125</miny>
+    <maxy>90.125</maxy>
     <crs>EPSG:4326</crs>
   </nativeBoundingBox>
   <latLonBoundingBox>
-    <minx>259.875</minx>
-    <maxx>300.125</maxx>
-    <miny>14.875</miny>
-    <maxy>34.125</maxy>
+    <minx>-0.125</minx>
+    <maxx>359.875</maxx>
+    <miny>-90.125</miny>
+    <maxy>90.125</maxy>
     <crs>EPSG:4326</crs>
   </latLonBoundingBox>
   <projectionPolicy>REPROJECT_TO_DECLARED</projectionPolicy>
@@ -67,8 +67,6 @@
     <id>CoverageStoreInfoImpl--1c84a464:1819da60027:-608a</id>
   </store>
   <serviceConfiguration>false</serviceConfiguration>
-  <internationalTitle/>
-  <internationalAbstract/>
   <nativeFormat>ImageMosaic</nativeFormat>
   <grid dimension="2">
     <range>
